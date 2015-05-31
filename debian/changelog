@@ -1,0 +1,11 @@
+gnome-characters (3.16.1-0blankon1) tambora; urgency=medium
+
+  * Initial import from PPA GNOME3-TEAM 
+
+ -- Mahyuddin <yudi.al@gmail.com>  Sun, 31 May 2015 20:39:30 +0700
+
+gnome-characters (3.16.1-0ubuntu1~vivid3) vivid; urgency=medium
+
+  * Initial packaging
+
+ -- Jackson Doak <noskcaj@ubuntu.com>  Sat, 18 Apr 2015 17:37:30 +1000

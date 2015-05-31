@@ -1,0 +1,25 @@
+From c217a7b08da35b094414af88f5ca63d89a095771 Mon Sep 17 00:00:00 2001
+From: Tim Lunn <tim@feathertop.org>
+Date: Sun, 19 Apr 2015 09:36:07 +1000
+Subject: [PATCH] Fix build failure due to missing symbols from pangoft2
+
+https://bugzilla.gnome.org/show_bug.cgi?id=748124
+---
+ configure.ac | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/configure.ac b/configure.ac
+index d35ae08..d59295c 100644
+--- a/configure.ac
++++ b/configure.ac
+@@ -81,7 +81,7 @@ GLIB_TESTS
+ GLIB_COMPILE_RESOURCES=`$PKG_CONFIG --variable glib_compile_resources gio-2.0`
+ AC_SUBST(GLIB_COMPILE_RESOURCES)
+ 
+-PKG_CHECK_MODULES([LIBGC], [gio-2.0 gtk+-3.0 pango])
++PKG_CHECK_MODULES([LIBGC], [gio-2.0 gtk+-3.0 pango pangoft2])
+ 
+ AC_CONFIG_FILES([
+   Makefile
+-- 
+2.1.4
